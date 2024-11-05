@@ -15,5 +15,6 @@ public class PersonDTO{
     private String email;
     private String mobile;
     private String address;
+    private String password;
 
 }

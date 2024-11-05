@@ -1,5 +1,6 @@
 package com.myapp.crudtemplate.entity;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -7,9 +8,7 @@ import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 @Data
 @Builder
@@ -25,5 +24,7 @@ public class Person{
     private String email;
     private String mobile;
     private String address;
+    @Column(nullable = false)
+    private String password;
 
 }

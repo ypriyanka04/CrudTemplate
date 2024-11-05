@@ -10,4 +10,6 @@ public interface PersonService {
     PersonDTO getPersonById(Long id);
     PersonDTO updatePerson(Long id, PersonDTO personDTO);
     void deletePerson(Long id);
+
+    boolean validateLogin(String username, String password);
 }
